@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1520583457224-aee11bad5112?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar section */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  height: 10vh;
+}
+
+.navigation .nav-left a {
+  padding-left: 50px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.navigation .nav-left a:hover {
+  color: rgb(6, 226, 153);
+  transition: all 0.7s ease-in-out;
+}
+
+.navigation .nav-left a span {
+  font-size: 20px;
+}
+
+.navigation .nav-right ul {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.navigation .nav-right ul li {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.navigation .nav-right ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navigation .nav-right ul li a:hover {
+  color: rgb(6, 226, 153);
+  transition: all 0.5s ease-in-out;
+}
+
+.navigation .nav-right ul li .btn-daftar {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
+  color: rgb(6, 226, 153);
+  border-radius: 3px;
+  margin-right: -10px;
+}
+
+.navigation .nav-right ul li .btn-daftar:hover {
+  background-color: rgb(6, 226, 153);
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+.navigation .nav-right ul li .btn-masuk {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(6, 226, 153);
+  color: white;
+}
+
+.navigation .nav-right ul li .btn-masuk:hover {
+  background-color: white;
+  color: rgb(6, 226, 153);
+  transition: all 1s ease-in-out;
+}
+
+/* content section */
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container .container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 125px auto;
+  color: white;
+  text-align: center;
+}
+
+.container .container-content .text-update {
+  font-style: italic;
+}
+
+.container .container-content .text-title {
+  font-size: 65px;
+}
+
+.container .container-content .text-title-second {
+  font-size: 35px;
+}
+
+.container .container-content .text-title-color {
+  font-size: 35px;
+  color: rgb(6, 226, 153);
+}
+
+.container .container-content .text-title-color:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.container .container-content .text-title-color span {
+  color: rgb(58, 58, 250);
+}
+
+.container .container-content .text-card {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.container .container-content .card-content-button button {
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 600px;
+  background-color: rgb(6, 226, 153);
+  border-radius: 3px;
+  color: white;
+  border: none;
+  margin-top: 30px;
+}
+
+.container .container-content .card-content-button button:hover {
+  background-color: white;
+  color: rgb(6, 226, 153);
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.container .container-content .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.container .container-content .rating:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.container .container-content .rating .rating-photo ul {
+  display: flex;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+.container .container-content .rating .rating-photo ul li img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: -20px;
+}
+
+.container .container-content .rating .rating-photo ul li img:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.container .container-content .rating .rating-star {
+  text-align: start;
+}
+
+.container .container-content .rating .rating-star .rating-star-total {
+  color: rgb(255, 217, 50);
+}
+
+.container .container-content .rating .rating-star .rating-star-text {
+  font-size: 15px;
+}
