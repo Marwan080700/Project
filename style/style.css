@@ -7,11 +7,9 @@
 }
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1520583457224-aee11bad5112?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80");
-  background-size: 100%;
+  background-image: url("https://images.unsplash.com/photo-1494322296366-b46227baa318?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80");
+  object-fit: cover;
   background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
 }
 
 /* navbar section */
@@ -26,8 +24,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: rgb(199, 199, 199);
+  box-shadow: 0 0 15px gray;
   height: 10vh;
+  border-bottom: 20px;
 }
 
 .navigation .nav-left a {
@@ -39,7 +39,7 @@ header {
 }
 
 .navigation .nav-left a:hover {
-  color: rgb(6, 226, 153);
+  color: rgb(58, 58, 250);
   transition: all 0.7s ease-in-out;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .navigation .nav-right ul li a:hover {
-  color: rgb(6, 226, 153);
+  color: rgb(85, 250, 195);
   transition: all 0.5s ease-in-out;
 }
 
@@ -102,6 +102,74 @@ header {
   background-color: white;
   color: rgb(6, 226, 153);
   transition: all 1s ease-in-out;
+}
+
+#barsmenu {
+  display: none;
+}
+
+#barsmenu button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-right: 35px;
+  color: white;
+  font-size: 25px;
+}
+
+.hamburger-nav-container {
+  font-size: 20px;
+  font-weight: 600;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  list-style-type: none;
+  background-color: white;
+}
+
+.hamburger-nav-container a {
+  color: black;
+  margin: 3px;
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid rgb(199, 199, 199);
+}
+
+.hamburger-nav-container a:hover {
+  background-color: rgb(199, 199, 199);
+  transition: all 1s ease-in-out;
+  color: white;
+}
+
+.hamburger-nav-container .btn-daftar {
+  align-content: center;
+  background-color: white;
+  color: rgb(6, 226, 153);
+}
+
+.hamburger-nav-container .btn-daftar:hover {
+  background-color: rgb(6, 226, 153);
+  color: white;
+  transition: all 0.7s ease-in-out;
+}
+
+.hamburger-nav-container .btn-masuk {
+  background-color: white;
+  color: white;
+  background-color: rgb(6, 226, 153);
+}
+
+.hamburger-nav-container .btn-masuk:hover {
+  background-color: white;
+  color: rgb(6, 226, 153);
+  transition: all 0.7s ease-in-out;
 }
 
 /* content section */
@@ -212,4 +280,25 @@ header {
 
 .container .container-content .rating .rating-star .rating-star-text {
   font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation .item-collapse {
+    display: none;
+  }
+  #barsmenu {
+    display: block;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .container .container-content .card-content-button button {
+    width: 90%;
+  }
 }
